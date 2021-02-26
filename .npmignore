@@ -13,6 +13,7 @@ node_modules
 .editorconfig
 .eslintignore
 .eslintrc
+.gitattributes
 .gitignore
 .nvmrc
 
