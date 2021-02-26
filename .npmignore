@@ -4,6 +4,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Project and Generated Folders
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.github
 .vscode
 node_modules
 
