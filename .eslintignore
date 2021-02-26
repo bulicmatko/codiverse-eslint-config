@@ -1,0 +1,7 @@
+# ESLint Ignore Configuration File
+# See https://eslint.org/docs/2.13.1/user-guide/configuring#ignoring-files-and-directories for more details
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Project and Generated Folders
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+node_modules

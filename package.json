@@ -1,0 +1,81 @@
+{
+  "name": "@codiverse/eslint-config",
+  "version": "0.0.0",
+  "description": "Codiverse ESLint Config",
+  "scripts": {
+    "commit": "cz",
+    "lint:check": "eslint '**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "eslint --fix '**/*.{ts,tsx,js,jsx}'"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.0",
+    "@commitlint/config-conventional": "^12.0.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4",
+    "typescript": "^4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bulicmatko/codiverse-eslint-config.git"
+  },
+  "keywords": [
+    "codiverse",
+    "eslint",
+    "config"
+  ],
+  "authors": [
+    {
+      "name": "Codiverse",
+      "email": "codiverse@codiverse.io"
+    },
+    {
+      "name": "Matko Bulic",
+      "email": "matko.bulic@codiverse.io"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bulicmatko/codiverse-eslint-config/issues"
+  },
+  "homepage": "https://github.com/bulicmatko/codiverse-eslint-config#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "yarn lint:fix"
+  }
+}
