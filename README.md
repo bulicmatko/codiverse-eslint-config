@@ -25,4 +25,4 @@ npm run lint:fix
 
 ## 🧾 License
 
-Licensed under [MIT License](./LICENSE).
+Licensed under the [MIT License](./LICENSE).
