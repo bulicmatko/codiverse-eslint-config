@@ -101,6 +101,12 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "error",
       },
     },
+    {
+      files: ["*.repository.{ts,tsx,js,jsx}"],
+      rules: {
+        "@typescript-eslint/explicit-function-return-type": "error",
+      },
+    },
   ],
   settings: {
     "import/resolver": {
