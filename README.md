@@ -2,18 +2,20 @@
 
 > Codiverse ESLint Config.
 
-[![Publish Codiverse Esling Config to npm](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/publish.yml/badge.svg)](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/publish.yml)
+[![Publish Codiverse ESLint Config to npm](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/publish.yml/badge.svg)](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/publish.yml)
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## 🛠 Requirements
 
-- [Node ^14.16.1](https://nodejs.org)
-- [npm 7.6.3](https://www.npmjs.com)
+- [Node ^14.17.5](https://nodejs.org)
+- [npm ^7.21.0](https://www.npmjs.com)
 
 ## 📜 Scripts
 
 ```bash
 # install dependencies
-npm i
+npm install
 
 # check code style
 npm run lint:check

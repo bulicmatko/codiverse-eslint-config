@@ -37,6 +37,7 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-shadow": "error",
 
     "import/extensions": "off",
     "import/prefer-default-export": "off",
@@ -56,37 +57,40 @@ module.exports = {
       {
         ignoreCase: false,
         callbacksLast: true,
-        shorthandFirst: false,
-        shorthandLast: true,
-        noSortAlphabetically: false,
+        shorthandFirst: true,
+        shorthandLast: false,
+        noSortAlphabetically: true,
         reservedFirst: true,
       },
     ],
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
 
-    "typescript-sort-keys/interface": "error",
-    "typescript-sort-keys/string-enum": "error",
+    "typescript-sort-keys/interface": "off",
+    "typescript-sort-keys/string-enum": "off",
 
     "class-methods-use-this": "off",
     "consistent-return": "off",
     "lines-between-class-members": "off",
     "max-classes-per-file": "off",
     "no-console": "error",
-    "no-shadow": "warn",
+    // Refer to: https://github.com/typescript-eslint/typescript-eslint/issues/2483
+    // no-shadow is disabled because we're using @typescript-eslint/no-shadow
+    "no-shadow": "off",
     "no-underscore-dangle": "off",
     "no-use-before-define": "off",
     "no-useless-constructor": "off",
-    "sort-imports": [
-      "error",
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        allowSeparatedGroups: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
-      },
-    ],
+    "sort-imports": ["off"],
+    // "sort-imports": [
+    //   "error",
+    //   {
+    //     ignoreCase: false,
+    //     ignoreDeclarationSort: true,
+    //     allowSeparatedGroups: true,
+    //     ignoreMemberSort: false,
+    //     memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+    //   },
+    // ],
   },
   overrides: [
     {

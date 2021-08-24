@@ -2,9 +2,18 @@
 # See https://git-scm.com/docs/gitignore for more details
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Compiled Output
+# Files and Folders
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-/node_modules
+node_modules
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Environments
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Logs
@@ -12,23 +21,24 @@
 logs
 *.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# IDEs and editors
+# IDEs and text editors
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-/.idea
-.project
+.c9
 .classpath
-.c9/
+.idea
+.project
+.settings
 *.launch
-.settings/
 *.sublime-workspace
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# IDE - VSCode
+# VSCode
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .vscode/*
 !.vscode/settings.json
@@ -39,6 +49,7 @@ lerna-debug.log*
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # OS
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+__MACOSX
 .DS_Store
-/__MACOSX
 Thumbs.db
+

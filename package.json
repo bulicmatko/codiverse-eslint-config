@@ -8,8 +8,8 @@
     "commit": "cz"
   },
   "engines": {
-    "node": "^14.16.1",
-    "npm": "^7.6.3"
+    "node": "^14.17.5",
+    "npm": "^7.21.0"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.2",
@@ -54,7 +54,7 @@
       "email": "matko.bulic@codiverse.io"
     }
   ],
-  "license": "MIT",
+  "license": "SEE LICENSE IN ./LICENSE",
   "bugs": {
     "url": "https://github.com/bulicmatko/codiverse-eslint-config/issues"
   },
@@ -79,6 +79,6 @@
     }
   },
   "lint-staged": {
-    "*.js": "yarn lint:fix"
+    "**/*.{ts,tsx}": "eslint --fix"
   }
 }

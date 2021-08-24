@@ -2,31 +2,17 @@
 # See https://docs.npmjs.com/cli/v6/using-npm/developers#keeping-files-out-of-your-package for more details
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Project and Generated Folders
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-.github
-.vscode
-node_modules
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Files
+# Files and Folders
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .editorconfig
 .eslintignore
 .eslintrc
 .gitattributes
+.github
 .gitignore
 .nvmrc
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Logs
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+.vscode
+node_modules
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Environments
@@ -38,19 +24,39 @@ lerna-debug.log*
 .env.production.local
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# OS
+# Logs
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-.DS_Store
-/__MACOSX
-Thumbs.db
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# IDEs and editors
+# IDEs and text editors
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-/.idea
-.project
+.c9
 .classpath
-.c9/
+.idea
+.project
+.settings
 *.launch
-.settings/
 *.sublime-workspace
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# VSCode
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# OS
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+__MACOSX
+.DS_Store
+Thumbs.db
