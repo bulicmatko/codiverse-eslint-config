@@ -2,8 +2,8 @@
 
 > Codiverse ESLint Config.
 
+[![CodeQL](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/codeql-analysis.yml)
 [![Publish Codiverse ESLint Config to npm](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/publish.yml/badge.svg)](https://github.com/bulicmatko/codiverse-eslint-config/actions/workflows/publish.yml)
-
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## 🛠 Requirements
